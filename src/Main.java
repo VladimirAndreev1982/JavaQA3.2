@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double m = 76;// масса тела в килограммах
-        double h = 174;// рост тела в сантиметрах
-        double index = service.calculate(m, h);// индекс массы тела
-        System.out.println("При массе тела " + m + " кг и росте " + h + " см индекс массы тела " +index);
+        double body_weight = 76;// масса тела в килограммах
+        double body_growth = 174;// рост тела в сантиметрах
+        double body_mass_index = service.calculate(body_weight, body_growth);// индекс массы тела
+        System.out.println("При массе тела " + body_weight + " кг и росте " + body_growth + " см индекс массы тела " + body_mass_index);
     }
 }
-
