@@ -1,6 +1,6 @@
 public class BmiService {
-    public double calculate(double m, double h) {
-        double index = m/((h/100)*(h/100)); // формула расчета индекса тела
-        return index;
+    public double calculate(double body_weight, double body_growth) {
+        double body_mass_index = body_weight / ((body_growth / 100) * (body_growth / 100)); // формула расчета индекса тела
+        return body_mass_index;
     }
 }
